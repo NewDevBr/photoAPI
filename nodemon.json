@@ -1,0 +1,6 @@
+{
+    "env" : {
+        "JWT_KEY":"your_top_secret",
+        "CONN_STRING":"mongodb://localhost:27017/photos"
+    }
+}
