@@ -46,7 +46,7 @@ Exists two main routes in this API: Users and Photos. Using differents HTTP verb
 |    GET    |   serverAddr:port/photos   |        Return a list of photo paths      |      Just require token         |
 |    POST    |   serverAddr:port/photos   |        Update one photo and insert that path into Mongo DB      |      A file with jpeg or png or jpg extension and Token  |
 |    DELETE    |   serverAddr:port/photos/:idPhoto   |        Remove a photo path of MongoDB and delete one image      |    idPhoto and Token         |
-|    GET    |   serverAddr:port/imgs/:somePath   |        Allow visualize a image file      |      Path         |
+|    GET    |   serverAddr:port/imgs/:somePath   |        Allows visualize a image file      |      Path         |
 
 
 #### Json response examples
@@ -58,7 +58,7 @@ Exists two main routes in this API: Users and Photos. Using differents HTTP verb
 }
 
 
-// Case a unauthenticated user try execute some proteced route
+// Case a unauthenticated user try execute some protected route
 {
 	"error":"Make login to use this functionality"
 }
@@ -96,11 +96,17 @@ Exists two main routes in this API: Users and Photos. Using differents HTTP verb
 ### 4. Dependencies or libraries <a name="Dependencies"/>
 
 Bcrypt: 5.0.1 [Bcrypt Docs](https://www.npmjs.com/package/bcrypt)
+
 Del: 6.0.0 [Del Docs](https://www.npmjs.com/package/del)
+
 Express: 4.17.1 [Express Docs](https://www.npmjs.com/package/express)
+
 JsonWebToken: 8.5.1 [JsonWebToken Docs](https://www.npmjs.com/package/jsonwebtoken)
+
 Mongoose: 5.12.2 [Mongoose Docs](https://www.npmjs.com/package/mongoose)
+
 Morgan: 1.10.0 [Morgan Docs](https://www.npmjs.com/package/morgan)
+
 Multer: 1.4.2 [Multer docs](https://www.npmjs.com/package/multer)
   
 
